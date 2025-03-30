@@ -2,7 +2,7 @@ package com.biblioteca.model;
 
 
 // Classe che rappresenta un libro nella biblioteca
-class Libro {
+public class Libro {
     private String titolo;
     private String autore;
     private int annoPubblicazione;
