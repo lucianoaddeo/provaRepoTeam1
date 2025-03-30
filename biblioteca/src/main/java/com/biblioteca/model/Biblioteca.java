@@ -1,4 +1,5 @@
 package com.biblioteca.model;
 
-public class Biblioteca {
-}
+import java.util.Arrays;
+
+class Biblioteca {}

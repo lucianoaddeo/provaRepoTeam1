@@ -1,4 +1,7 @@
 package com.biblioteca.model;
 
-public class Libro {
-}
+
+// Classe che rappresenta un libro nella biblioteca
+ class Libri {
+
+    }
