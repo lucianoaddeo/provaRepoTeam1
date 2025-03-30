@@ -8,13 +8,13 @@ public class Biblioteca {
     private static Libro[] dati = new Libro[100];
     private static int size = 0;
 
-    public void aggiungi(Libro l) {
+    public static void aggiungi(Libro l) {
         if (size < dati.length) {
             dati[size++] = l;
         }
     }
 
-    public void rimuovi(int index) {
+    public static void rimuovi(int index) {
         if (index >= 0 && index < size) {
             for (int i = index; i < size - 1; i++) {
                 dati[i] = dati[i + 1];
