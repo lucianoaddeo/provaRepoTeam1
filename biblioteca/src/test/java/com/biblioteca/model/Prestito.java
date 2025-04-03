@@ -1,11 +1,13 @@
 package com.biblioteca.model;
 
 import com.biblioteca.model.Biblioteca;
+import com.biblioteca.model.Libro;
+import com.biblioteca.model.Utente;
 
 public class Prestito {
 
     // Metodo per trovare l'indice di un libro nell'array della biblioteca
-    private static int trovaIndiceLibro(Libro l) {
+    private static int trovaIndiceLibro(com.biblioteca.model.Libro l) {
         for (int i = 0; i < Biblioteca.size; i++) {
             if (Biblioteca.dati[i].equals(l)) {
                 return i;  // Restituisce l'indice se il libro è trovato
@@ -15,7 +17,7 @@ public class Prestito {
     }
 
     // Metodo per associare un libro a un utente (quando il libro viene preso in prestito)
-    public static boolean associaLibroAUtente(Libro l, Utente u) {
+    public static boolean associaLibroAUtente(com.biblioteca.model.Libro l, com.biblioteca.model.Utente u) {
         int index = trovaIndiceLibro(l);
 
         // Verifica se il libro esiste nell'array
@@ -37,7 +39,7 @@ public class Prestito {
     }
 
     // Metodo per restituire un libro
-    public static boolean restituisciLibro(Libro l, Utente u) {
+    public static boolean restituisciLibro(com.biblioteca.model.Libro l, com.biblioteca.model.Utente u) {
         int index = trovaIndiceLibro(l);
 
         // Verifica se il libro esiste nell'array e se l'utente che restituisce è quello che ha preso il libro

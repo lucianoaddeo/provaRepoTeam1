@@ -1,10 +1,12 @@
 package com.biblioteca.model;
 
+import com.biblioteca.model.Libro;
+
 public class Biblioteca {
-    public static Libro[] dati = new Libro[100];
+    public static com.biblioteca.model.Libro[] dati = new com.biblioteca.model.Libro[100];
     public static int size = 0;
 
-    public static void aggiungi(Libro l) {
+    public static void aggiungi(com.biblioteca.model.Libro l) {
         if (size < dati.length) {
             dati[size++] = l;
         }
