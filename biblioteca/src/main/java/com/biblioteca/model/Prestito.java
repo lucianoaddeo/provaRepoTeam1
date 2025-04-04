@@ -22,11 +22,7 @@ public class Prestito {
         if (index != -1) {
             // Se il libro è disponibile per il prestito
             if (Biblioteca.dati[index] != null) {
-                // Qui supponiamo che tu possa associare l'utente al libro
-                // Ad esempio, se Libro avesse un campo `utente`, lo settiamo con l'utente passato
-                // NOTA: Assumiamo che `Libro` abbia il campo "utente", che però non possiamo modificare.
-
-                // Simuliamo l'associazione (anche se senza modificare `Libro` non è possibile in realtà):
+        
                 System.out.println(l.getTitolo() + " è stato preso in prestito da " + u.getNome());
                 return true;
             }
